@@ -7,7 +7,7 @@ const ProductCard = ({data}) => {
     <div className="card bg-white rounded-4xl p-2 w-full max-w-sm overflow-hidden shadow-2xl relative">
        <div className="absolute z-10 top-6 left-8">
          <div className="flex items-center justify-between gap-48">
-            <div className="bg-white/10 rounded-full px-3 py-1 text-sm font-bold text-white">Best Seller</div>
+            <div className="bg-white/10 rounded-full px-3 py-1 text-sm font-bold text-black">Best Seller</div>
             <img src={data.company_logo}alt="logo" className="rounded-full w-10 bg-white"/>
         </div>
        </div>

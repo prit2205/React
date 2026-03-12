@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Components/Card'
 import ProductCard from './ProductCard'
-
+import Card3 from './Card3'
 
 const App = () => {
 //   const data = [
@@ -66,88 +66,173 @@ const App = () => {
 //     "price": 16
 //   }
 // ];
- const Product = [
+
+//  const Product = [
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-nike-icon-svg-download-png-202653.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Nike Air Zoom Pegasus",
+//     "price": "$120",
+//     "tagline": "Run faster, feel lighter",
+//     "details": "Lightweight running shoes with responsive cushioning and breathable mesh upper."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-adidas-icon-svg-download-png-2673953.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Adidas Ultraboost",
+//     "price": "$180",
+//     "tagline": "Energy in every step",
+//     "details": "Premium running shoes with boost cushioning and flexible knit upper."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-puma-icon-svg-download-png-2673893.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Puma RS-X Sneakers",
+//     "price": "$110",
+//     "tagline": "Bold style meets comfort",
+//     "details": "Chunky sneakers with cushioned midsole and durable rubber outsole."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-new-icon-svg-download-png-282520.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "New Balance 574",
+//     "price": "$95",
+//     "tagline": "Classic comfort",
+//     "details": "Everyday sneakers with suede mesh upper and cushioned support."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-asics-icon-svg-download-png-282909.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "ASICS Gel-Kayano",
+//     "price": "$160",
+//     "tagline": "Stability for runners",
+//     "details": "High-performance running shoes with gel cushioning technology."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-reebok-icon-svg-download-png-282489.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Reebok Nano X",
+//     "price": "$130",
+//     "tagline": "Train without limits",
+//     "details": "Durable training shoes designed for gym and cross training."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-under-icon-svg-download-png-282154.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Under Armour HOVR",
+//     "price": "$150",
+//     "tagline": "Feel the energy return",
+//     "details": "Advanced running shoes with HOVR cushioning for smooth movement."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-vans-icon-svg-download-png-202702.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Vans Old Skool",
+//     "price": "$70",
+//     "tagline": "Classic skate style",
+//     "details": "Iconic skate shoes with canvas upper and signature side stripe."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-converse-icon-svg-download-png-202557.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Converse Chuck Taylor",
+//     "price": "$65",
+//     "tagline": "Timeless sneaker icon",
+//     "details": "Classic canvas sneakers with rubber toe cap and vintage design."
+//   },
+//   {
+//     "company_logo": "https://cdn.iconscout.com/icon/free/png-512/free-converse-logo-icon-svg-download-png-2854234.png?f=webp&w=256",
+//     "product_photo": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80",
+//     "product_name": "Skechers Go Walk",
+//     "price": "$85",
+//     "tagline": "Comfort in every step",
+//     "details": "Lightweight walking shoes with breathable mesh and cushioned sole."
+//   }
+// ]
+
+ const foods = [
   {
-    "product_photo": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb",
-    "company_logo": "logos/sony.png",
-    "product_name": "Sony WH-1000XM5 Headphones",
-    "price": 34999,
-    "tagline": "Silence the world",
-    "details": "Premium wireless headphones with industry-leading noise cancellation and crystal-clear sound."
+    "id": 1,
+    "name": "Hamburger",
+    "category": "Burger",
+    "price": "₹250",
+    "description": "Juicy grilled hamburger with fresh lettuce, cheese and signature sauce.",
+    "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a",
-    "company_logo": "logos/apple.png",
-    "product_name": "Apple Watch Series 9",
-    "price": 41900,
-    "tagline": "Future on your wrist",
-    "details": "Luxury smartwatch with powerful health tracking and stunning always-on Retina display."
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "category": "Pizza",
+    "price": "₹420",
+    "description": "Classic pepperoni pizza topped with mozzarella and tomato sauce.",
+    "image": "https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-pepperoni-pizza-isolated-with-clipping-path-png-image_9221595.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
-    "company_logo": "logos/jbl.png",
-    "product_name": "JBL Charge 5 Speaker",
-    "price": 15999,
-    "tagline": "Powerful cinematic sound",
-    "details": "Portable Bluetooth speaker delivering deep bass and powerful sound with long battery life."
+    "id": 3,
+    "name": "Alfredo Pasta",
+    "category": "Pasta",
+    "price": "₹320",
+    "description": "Rich and creamy Alfredo pasta with parmesan cheese.",
+    "image": "https://png.pngtree.com/png-clipart/20250501/original/pngtree-rich-chicken-alfredo-fettuccine-in-creamy-parmesan-sauce-with-herb-garnish-png-image_20924405.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1629429407759-01cd3d7cfb38",
-    "company_logo": "logos/logitech.png",
-    "product_name": "Logitech G Pro Gaming Mouse",
-    "price": 8999,
-    "tagline": "Precision in every move",
-    "details": "Professional esports gaming mouse with ultra-fast response and precise tracking sensor."
+    "id": 4,
+    "name": "Chicken Sandwich",
+    "category": "Sandwich",
+    "price": "₹220",
+    "description": "Grilled chicken sandwich with lettuce and mayo.",
+    "image": "https://static.vecteezy.com/system/resources/previews/054/952/459/non_2x/a-mouthwatering-chicken-sandwich-layered-with-fresh-lettuce-and-ripe-tomatoes-on-toasted-bread-a-delicious-chicken-sandwich-with-fresh-lettuce-and-juicy-tomatoes-transparent-background-free-png.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7",
-    "company_logo": "logos/samsonite.png",
-    "product_name": "Samsonite Pro Backpack",
-    "price": 6999,
-    "tagline": "Travel like a professional",
-    "details": "Premium laptop backpack with sleek design and durable materials for everyday travel."
+    "id": 5,
+    "name": "French Fries",
+    "category": "Snacks",
+    "price": "₹150",
+    "description": "Crispy golden french fries with a pinch of salt.",
+    "image": "https://png.pngtree.com/png-vector/20250424/ourmid/pngtree-hot-and-crispy-french-fries-in-red-box-png-image_16097148.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef",
-    "company_logo": "logos/corsair.png",
-    "product_name": "Corsair RGB Mechanical Keyboard",
-    "price": 18999,
-    "tagline": "Feel the power of keys",
-    "details": "High-performance mechanical keyboard with immersive RGB lighting and precision switches."
+    "id": 6,
+    "name": "Chocolate Donut",
+    "category": "Dessert",
+    "price": "₹120",
+    "description": "Soft donut topped with rich chocolate glaze.",
+    "image": "https://png.pngtree.com/png-clipart/20241005/original/pngtree-chocolate-donut-isolated-on-transparent-background-png-image_16209821.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6",
-    "company_logo": "logos/xiaomi.png",
-    "product_name": "Xiaomi Smart Band 8",
-    "price": 4999,
-    "tagline": "Track every heartbeat",
-    "details": "Elegant fitness tracker with AMOLED display and advanced health monitoring."
+    "id": 7,
+    "name": "Iced Coffee",
+    "category": "Drink",
+    "price": "₹180",
+    "description": "Cold brewed coffee served with ice and cream.",
+    "image": "https://png.pngtree.com/png-clipart/20241110/original/pngtree-isolate-iced-coffee-on-a-white-transparent-background-png-image_16857863.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1625842268584-8f3296236761",
-    "company_logo": "logos/anker.png",
-    "product_name": "Anker USB-C Power Hub",
-    "price": 4999,
-    "tagline": "One hub. Endless power",
-    "details": "Premium USB-C hub offering multiple ports, fast data transfer, and sleek aluminum design."
+    "id": 8,
+    "name": "Milkshake",
+    "category": "Beverage",
+    "price": "₹200",
+    "description": "Sweet strawberry milkshake blended with fresh milk.",
+    "image": "https://png.pngtree.com/png-vector/20240205/ourmid/pngtree-the-strawberry-milkshake-png-image_11654495.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1601737487795-dab272f52420",
-    "company_logo": "logos/samsung.png",
-    "product_name": "Samsung Portable SSD T7",
-    "price": 14999,
-    "tagline": "Speed meets elegance",
-    "details": "Ultra-fast portable SSD with secure storage and compact metallic design."
+    "id": 9,
+    "name": "Veggie Salad",
+    "category": "Salad",
+    "price": "₹210",
+    "description": "Fresh vegetable salad with olive oil dressing.",
+    "image": "https://png.pngtree.com/png-clipart/20240830/original/pngtree-food-bowl-vegetable-salad-png-image_15893868.png"
   },
   {
-    "product_photo": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
-    "company_logo": "logos/philips.png",
-    "product_name": "Philips Smart LED Desk Lamp",
-    "price": 3999,
-    "tagline": "Light your creativity",
-    "details": "Modern LED desk lamp with adjustable brightness and eye-care lighting technology."
+    "id": 10,
+    "name": "Chocolate Cake",
+    "category": "Cake",
+    "price": "₹350",
+    "description": "Moist chocolate cake layered with creamy frosting.",
+    "image": "https://png.pngtree.com/png-vector/20240208/ourmid/pngtree-delicious-chocolate-cake-png-image_11714171.png"
   }
 ]
+
  return (
 <>
   {/* <section className="flex flex-wrap gap-6 px-8 py-4 justify-center items-center">
@@ -157,12 +242,22 @@ const App = () => {
 })}
   </section> */}
 
- <section className="flex items-center flex-wrap py-4 px-6 gap-6 justify-center">
+ {/* <section className="flex items-center flex-wrap py-4 px-6 gap-6 justify-center">
    
    {Product.map(function (data) {
-    return <ProductCard data={data} />;
+    return <ProductCard data={data} key={data.company_logo}/>;
    })}
- </section>
+ </section> */}
+
+<section className="flex items-center flex-wrap py-4 px-6 gap-6 justify-center">
+        <Card3 />
+
+ {foods.map((item, i) => (
+          <Card3 key={i} data={item} />
+        ))}
+
+
+      </section>
   </>
   )
 }
