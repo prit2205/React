@@ -157,7 +157,7 @@ const App = () => {
 })}
   </section> */}
 
- <section className="flex items-center flex-wrap py-4 px-6 gap-6 justify-center">
+ <section className=" flex items-center flex-wrap py-4 px-6 gap-6 justify-center">
    
    {Product.map(function (data) {
     return <ProductCard data={data} />;
