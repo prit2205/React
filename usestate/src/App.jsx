@@ -1,10 +1,18 @@
 import React from 'react'
-import Incearse from './Components/Incearse'
+import ChangeUser from './Components/ChangeUser'
+import AddUser from './Components/AddUser'
+// import Incearse from './Components/Incearse'
 
 const App = () => {
   return (
     <>
-    <Incearse />
+    {/* <Incearse /> */}
+
+    {/* <ChangeUser /> */}
+
+    {/* useState with Array */}
+    <AddUser />
+
     </>
   )
 }
