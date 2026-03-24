@@ -1,8 +1,19 @@
 import React from 'react'
+import Home from './Pages/Home'
+import { Route, Routes } from 'react-router-dom'
+import Product from './Pages/Product'
 
 const App = () => {
   return (
-    <div>App</div>
+   <>
+    <Routes>
+      <Route path='/' element={ <Home />}/>
+      <Route path='/product/:id' element={<Product />}/>
+    </Routes>
+
+   
+
+   </>
   )
 }
 
